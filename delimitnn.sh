@@ -12,7 +12,7 @@ while [[ "$var" =~ $'\t'$'\n' ]] ; do
   if [ -z "$2" ]; then
   for x in ${array[@]}; do               # print result
      ((i++))
-     echo -e "$i) $x\n"
+     echo -e "$i) $x\n"                  # prefix lines with #)
   done
 
   else
