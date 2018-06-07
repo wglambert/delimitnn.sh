@@ -1,4 +1,5 @@
-#!/bin/bash  #https://stackoverflow.com/a/16904731
+#!/bin/bash  
+#https://stackoverflow.com/a/16904731
 var=$(cat $1)                 # read file into string
 var=${var//$'\n'$'\n'/$'\t'}                # 2 newlines to 1 tab
 while [[ "$var" =~ $'\t'$'\n' ]] ; do
